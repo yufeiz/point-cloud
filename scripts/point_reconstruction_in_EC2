@@ -1,0 +1,19 @@
+version: 0.0
+os: linux
+files:
+  - source: images/*.jpg
+    destination: /root/photos/
+hooks:
+  BeforeInstall:
+    - location: scripts/start_docker
+      timeout: 300
+      runas: root
+  ApplicationStart:
+    - location: scripts/connect_docker
+    - location: scripts/point_reconstruction
+      timeout: 300
+      runas: root
+  ApplicationStop:
+    - location: scripts/stop_docker
+      timeout: 300
+      runas: root
