@@ -1,7 +1,7 @@
 version: 0.0
 os: ubuntu
 files:
-  - source: /images/*.jpg
+  - source: images/*.jpg
     destination: /root/photos/
 hooks:
   BeforeInstall:
