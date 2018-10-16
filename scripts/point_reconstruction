@@ -1,1 +1,1 @@
-VisualSFM sfm+pmvs /src/*.jpg result.nvm
+docker exec -it pointcloud /bin/sh -c "VisualSFM sfm+pmvs /src/*.jpg /src/result.nvm"

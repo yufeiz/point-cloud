@@ -9,9 +9,6 @@ hooks:
       timeout: 300
       runas: root
   ApplicationStart:
-    - location: scripts/connect_docker
-      timeout: 300
-      runas: root
     - location: scripts/point_reconstruction
       timeout: 300
       runas: root
