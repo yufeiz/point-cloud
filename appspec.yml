@@ -10,7 +10,6 @@ hooks:
       runas: root
   ApplicationStart:
     - location: scripts/point_reconstruction
-      timeout: 300
       runas: root
   ApplicationStop:
     - location: scripts/stop_docker
